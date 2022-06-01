@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "design_ui",
+            "request": "launch",
+            "type": "dart"
+        },
+        // to run on android
+        {
+            "name": "Android",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "emulator-5554"
+        },
+        // to run on chrome
+        {
+            "name": "Chrome",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "chrome"
+        }
+    ],
+    // to run on all devices
+    "compounds": [
+        {
+            "name": "All Devices",
+            "configurations": ["Android","Chrome"]
+        }
+    ]
+}
